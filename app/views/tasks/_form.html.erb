@@ -1,0 +1,15 @@
+<%= form_for(task) do |f| %>
+  <p>
+    <b>Title</b><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <b>Details</b><br>
+    <%= f.text_field :details %>
+  </p>
+  <p>
+    <b>Completed ? </b>
+    <%= f.check_box :completed %>
+  </p>
+  <%= f.submit %>
+<% end %>
